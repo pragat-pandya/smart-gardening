@@ -13,18 +13,12 @@
             <a class="nav-link text-white" href="{% url 'home' %}">Home <span class="sr-only">(current)</span></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link text-white" href="#">LogIn</a>
+            <a class="nav-link text-white" href="{% url 'login' %}">LogIn</a>
           </li>
           <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            <a class="nav-link text-white" href="{% url 'services' %}">
               Services
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Service 1</a>
-              <a class="dropdown-item" href="#">Service 2</a>
-              <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Service 3</a>
-            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link text-white" href="{% url 'contactUs' %}" tabindex="-1">Contact</a>
