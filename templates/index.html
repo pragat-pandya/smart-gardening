@@ -2,32 +2,144 @@
 {% load static %}
 {% block content %}
 
-<div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
-  <ol class="carousel-indicators">
-    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
-    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
-  </ol>
-  <div class="carousel-inner">
-    <div class="carousel-item active">
-      <img class="d-block w-100" src="{% static './images/6.jpg' %}" alt="First slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{% static './images/car4.jpg' %}" alt="Second slide">
-    </div>
-    <div class="carousel-item">
-      <img class="d-block w-100" src="{% static './images/car5.jpg' %}" alt="Third slide">
+<!---CAROUSEL OF THE HOMEPAGE--->
+<div class="container-fluid bg-dark">
+  <div class="container my-3">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+        <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="d-block w-100" src="{% static './images/6.jpg' %}" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static './images/car4.jpg' %}" alt="Second slide">
+        </div>
+        <div class="carousel-item">
+          <img class="d-block w-100" src="{% static './images/car5.jpg' %}" alt="Third slide">
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+      </a>
+      <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+      </a>
     </div>
   </div>
-  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
 </div>
 
 
+<!---SERVICES CARD---->
+<div class="container-fluid bg-light">
+  <div class="container mb-3 ">
+    <div class="row">
+      <div class="col-lg-5 col-md-12 p-2 text-center">
+        <img src="{% static './images/services.jpg' %}" class="img-fluid" alt="Services Image">
+      </div>
+      <div class="col-lg-7 col-md-12 text-left p-4">
+        <h3 class="font-weight-bold">Services</h3>
+        <p class="lead">
+          The technology which could make our life prosper within the walls could also help to create our own corner of nature nourish. In this project, a smart gardening system has been proposed that utilizes the concept of the Internet of Things (IoT). The main objective of this project is to optimize water usage during gardening and remotely maintain the garden
+        </p>
+        <p>
+           A plant recognition model has been introduced in this system, where a Convolutional Neural Network (CNN) [1] based deep-learning algorithm classifies the plant categories. Moreover, this model also informs the end-user about the health of the plant.
+        </p>
+        <div class="text-right mr-5 p-3">
+          <a href="#" class="btn btn-warning btn-lg">See All Services</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!--PRICING CARD--->
+<div class="container-fluid bg-dark">
+  <div class="container mb-3 ">
+    <div class="row">
+      <div class="col-lg-5 col-md-12 p-2 text-center d-lg-none">
+        <img src="{% static './images/services.jpg' %}" class="img-fluid" alt="Services Image">
+      </div>
+      <div class="col-lg-7 col-md-12 text-left p-4">
+        <h3 class="font-weight-bold text-white">Pricing</h3>
+        <p class="lead text-white">
+                  The widespread popularization of Internet has brought about various Internet-based business models as well as well-known
+          Internet giants such as Facebook, Google, Amazon, and Alibaba. Similarly, the application of internet of things (IoT) is
+          fermenting IoT-based business models in various ﬁelds. In our work, we present an IoT-based e-business model of
+          intelligent vegetable greenhouses with details on the basic process and key nodes of the e-business model.
+        </p>
+        <p class="text-white">
+          Information,
+          capital and logistics ﬂows are recognized in the industry chain consisting of ingredient suppliers, IoT-equipped green-
+          houses, IoT-based e-business platforms, payment and delivery service providers, and end consumers. The value chain is
+          also analyzed according to Michael Porter’s value chain model, which is helpful for greenhouses to focus on main activities
+          in the business model.        </p>
+        <div class="text-right mr-5 p-3">
+          <a href="#" class="btn btn-outline-warning btn-lg">Get Quotation</a>
+        </div>
+      </div>
+      <div class="col-lg-5 col-md-12 p-2 text-center d-none d-lg-block d-xl-block">
+        <img src="{% static './images/services.jpg' %}" class="img-fluid" alt="Services Image">
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<!---TESTIMONIALS--->
+<div class="container-fluid my-3">
+  <div class="container">
+    <div class="text-center mt-5 mb-3">
+      <h2 class="font-weight-bold">TESTIMONIALS</h2>
+      <h3 class="font-weight-light">What other people has to say about our service...</h3>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-12 my-3 p-md-4">
+        <p class="border border-primary p-4 rounded bg-light lead">
+          "Sed ut perspiciatis unde omnis
+          iste natus error sit voluptatem
+          accusantium doloremque
+          laudantium, totam rem aperiam,
+          eaque ipsa quae ab one
+          voluptatem sequi nesciunt.
+          Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit
+          amet, consectetur"
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-12 my-3 p-md-4">
+        <p class="border border-warning p-4 rounded bg-light lead">
+          "Sed ut perspiciatis unde omnis
+          iste natus error sit voluptatem
+          accusantium doloremque
+          laudantium, totam rem aperiam,
+          eaque ipsa quae ab one
+          voluptatem sequi nesciunt.
+          Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit
+          amet, consectetur"
+        </p>
+      </div>
+      <div class="col-lg-4 col-md-12 my-3 p-md-4">
+        <p class="border border-danger p-4 rounded bg-light lead">
+          "Sed ut perspiciatis unde omnis
+          iste natus error sit voluptatem
+          accusantium doloremque
+          laudantium, totam rem aperiam,
+          eaque ipsa quae ab one
+          voluptatem sequi nesciunt.
+          Neque porro quisquam est, qui
+          dolorem ipsum quia dolor sit
+          amet, consectetur"
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
 {% endblock %}
