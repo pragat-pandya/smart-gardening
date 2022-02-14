@@ -8,4 +8,5 @@ urlpatterns = [
     path('contact/', views.contact, name="contactUs"),
     path('user/', include('users.urls')),
     path('services/', include('services.urls')),
+    path('aboutUs/', views.aboutUs, name='aboutUs'),
 ]

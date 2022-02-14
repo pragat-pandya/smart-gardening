@@ -5,3 +5,6 @@ def index(request):
 
 def contact (request):
     return render(request, 'contactUs.html')
+
+def aboutUs (request):
+    return render (request, 'aboutUs.html')
