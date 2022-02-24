@@ -4,6 +4,48 @@
 
 {% block content %}
 
-<h2>This is tracker_home</h2>
+<div class="bg-light text-center">
+  <div class="container my-5">
+    <div class="p-2 my-5">
+      <div class="text-center mt-5">
+        <h2 class="text-dark font-weight-bold">Water Usage Summary</h2>
+      </div>
+      <canvas id="myChart" class=""></canvas>
+    </div>
+    <div class="text-center mt-5">
+      <h2 class="text-dark font-weight-bold">Your Current Watering Schedule</h2>
+    </div>
+    <div class="d-flex justify-content-center bg-light">
+      <div class="bg-warning p-2 my-5">
+        <h3 class="text-white p-2 my-5"><b>Last watered at: </b><i>Today, </i><b>  22:55:24 IST</b> </h3>
+        <h3 class="text-white p-2 my-5"><b>Next Watering: </b><i>Tomorrow, </i><b>8:00:00 IST</b></h3>
+        <div class="text-center my-5">
+          <a href="#" class="btn btn-lg btn-outline-dark">Water Now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
+
+
+{% block script %}
+<script type="text/javascript">
+  var xValues = ['Jan','Fab','Mar','April','May','June','July','Aug','Sep','Oct','Nov', 'Dec'];
+  var yValues = [7,8,8,9,9,9,10,11,14,14,15,12];
+
+  new Chart("myChart", {
+    type: "line",
+    data: {
+      labels: xValues,
+      datasets: [{
+        label:'Liters of water used per month',
+        backgroundColor: "rgb(13,110,253)",
+        borderColor: "rgb(192, 222, 44)",
+        data: yValues
+      }]
+    },
+  });
+</script>
 
 {% endblock %}
