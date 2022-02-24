@@ -10,5 +10,6 @@ urlpatterns = [
     path('services/', include('services.urls')),
     path('aboutUs/', views.aboutUs, name='aboutUs'),
     path('terms&conditions/', views.terms, name='terms'),
+    path('privacyPolicy/', views.privacy_policy, name='privacyPolicy'),
     path('tracker/', include('tracker.urls')),
 ]

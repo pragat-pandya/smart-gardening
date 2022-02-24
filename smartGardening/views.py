@@ -11,3 +11,6 @@ def aboutUs (request):
 
 def terms (request):
     return render (request, 'termsNConditions.html')
+
+def privacy_policy(request):
+    return render (request, 'privacy_policy.html')
