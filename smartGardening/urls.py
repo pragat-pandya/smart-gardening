@@ -10,4 +10,5 @@ urlpatterns = [
     path('services/', include('services.urls')),
     path('aboutUs/', views.aboutUs, name='aboutUs'),
     path('terms&conditions/', views.terms, name='terms'),
+    path('tracker/', include('tracker.urls')),
 ]
