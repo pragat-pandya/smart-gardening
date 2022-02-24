@@ -8,3 +8,6 @@ def contact (request):
 
 def aboutUs (request):
     return render (request, 'aboutUs.html')
+
+def terms (request):
+    return render (request, 'termsNConditions.html')
