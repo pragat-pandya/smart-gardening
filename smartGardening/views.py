@@ -14,3 +14,6 @@ def terms (request):
 
 def privacy_policy(request):
     return render (request, 'privacy_policy.html')
+
+def book_demo (request):
+    return render (request, 'book_demo.html')

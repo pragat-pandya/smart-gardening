@@ -1,0 +1,52 @@
+{% extends 'layout.html' %}
+{% load static %}
+
+{% block content %}
+
+<div class="container-fluid bg-light">
+  <div class="container bg-white my-5 text-center">
+    <h2 class="text-dark font-weight-bold display-4"><i class="fas fa-handshake text-success mt-1"></i> Book an on-site demo from our executive!</h2>
+  </div>
+  <div class="container text-center bg-white">
+    <h2 class="text-dark font-weight-bold display-5 p-4 mb-5"><i class="fas fa-info-circle text-danger mt-1"></i>  Give us your contact details and our demo executive will contact you shortly!</h2>
+    <form class="p-3 my-4">
+      <div class="form-group row my-2">
+        <label class="col-sm-2 col-form-label-lg">Name</label>
+        <div class="col-sm-10 p-1">
+          <input type="text" class="form-control" id="inputEmail3" placeholder="Name">
+        </div>
+      </div>
+      <div class="form-group row my-2">
+        <label class="col-sm-2 col-form-label-lg">Email</label>
+        <div class="col-sm-10 p-1">
+          <input type="email" class="form-control" placeholder="Email">
+        </div>
+      </div>
+      <div class="form-group row my-2">
+        <label class="col-sm-2 col-form-label-lg">Mobile</label>
+        <div class="col-sm-10 p-1">
+          <input type="tel" class="form-control" placeholder="+91">
+        </div>
+      </div>
+      <div class="form-group row my-2">
+        <label class="col-sm-2 col-form-label-lg">Address</label>
+        <div class="col-sm-10 p-1">
+          <textarea name="" class="form-control" rows="4" cols="60" placeholder="Street, Area, Landmark, City, pincode"></textarea>
+        </div>
+      </div>
+      <div class="form-group row my-2">
+        <label class="col-sm-2 col-form-label-lg">Remarks</label>
+        <div class="col-sm-10 p-1">
+          <textarea name="" class="form-control" rows="4" cols="60" placeholder="Additional information if nessesary"></textarea>
+        </div>
+      </div>
+      <div class="form-group row text-center">
+        <div class="col-sm-10 mt-5">
+          <button type="submit" class="btn btn-lg btn-success"><i class="fas fa-headset mr-3"></i>Book a Call</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>
+
+{% endblock %}
